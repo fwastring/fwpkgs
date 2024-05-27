@@ -202,8 +202,8 @@ in rec {
     src = fetchFromGitHub {
       owner = "dracula";
       repo = "tmux";
-      rev = "c2b1d67cbda5c44ea8ee25d2ab307063e6959d0f";
-      sha256 = "0sb4j2ap6hf915qz93k09d5h5447nqpya0l8xrw97z5k4j4j9zmc";
+      rev = "v${version}";
+      sha256 = "IrNDBRopg9lgN5AfeXbhhh+uXiWQD2bjS1sNOgOJsu4=";
     };
     meta = with lib; {
       homepage = "https://draculatheme.com/tmux";
@@ -636,17 +636,6 @@ in rec {
       repo = "tmux-sidebar";
       rev = "aacbdb45bc5ab69db448a72de4155d0b8dbac677";
       sha256 = "1bp90zbv19kbbiik0bgb893ybss1jqsnk3353a631993xjwsih7c";
-    };
-  };
-
-  spotify = mkTmuxPlugin {
-    pluginName = "spotify";
-    version = "unstable-2024-05-27";
-    src = fetchFromGitHub {
-      owner = "FredzyW";
-      repo = "tmux-spotify-player";
-      rev = "4abb8a5ce65c0f61c7463757b051a3d1cdf16fd5";
-      sha256 = "0k99siiihdjf5bpkn9vlh463av2mnawyv3k0s6nfx6zrdwfc3nb2";
     };
   };
 
