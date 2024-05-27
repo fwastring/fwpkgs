@@ -650,6 +650,17 @@ in rec {
     };
   };
 
+  spotify = mkTmuxPlugin {
+    pluginName = "spotify";
+    version = "unstable-2024-05-27";
+    src = fetchFromGitHub {
+      owner = "FredzyW";
+      repo = "tmux-spotify-player";
+      rev = "4abb8a5ce65c0f61c7463757b051a3d1cdf16fd5";
+      sha256 = "0k99siiihdjf5bpkn9vlh463av2mnawyv3k0s6nfx6zrdwfc3nb2";
+    };
+  };
+
   tilish = mkTmuxPlugin {
     pluginName = "tilish";
     version = "unstable-2023-09-20";
