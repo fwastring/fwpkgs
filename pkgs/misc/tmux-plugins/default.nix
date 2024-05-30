@@ -388,6 +388,17 @@ in rec {
     };
   };
 
+  minimal = mkTmuxPlugin {
+    pluginName = "minimal";
+    version = "unstable-2024-05-30";
+    src = fetchFromGitHub {
+      owner = "niksingh710";
+      repo = "minimal-tmux-status";
+      rev = "ee00ccc15a6fdd42b98567602434f7c9131ef89f";
+      sha256 = "0dh4195n4mnhh3d0xg4vmkfvnmyj8mvdrbnfdk0xcc19w4i4lbxl";
+    };
+  };
+
   net-speed = mkTmuxPlugin {
     pluginName = "net-speed";
     version = "unstable-2018-12-02";
