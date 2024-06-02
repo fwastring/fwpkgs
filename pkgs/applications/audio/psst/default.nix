@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage rec {
     owner = "jpochyla";
     repo = pname;
     rev = "6c9cd3f91653764b832ea5136cda04c9e0f8fe50";
-    hash = "0d199n2l8cy6dzji2gxfxq7qz6rr6hdj89imslnkw1gm4pxlbnv";
+    hash = "sha256-BGIbf7jtrspFqURyy2AIYKSSkcirLgj0oUBq0CHl+2sa";
   };
 
   cargoLock = {
