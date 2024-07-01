@@ -18,7 +18,7 @@ in
 
   openssh_hpn = common rec {
     pname = "openssh-with-hpn";
-    version = "9.7p1";
+    version = "9.8p1";
     extraDesc = " with high performance networking patches";
 
     src = fetchurl {
@@ -58,7 +58,7 @@ in
 
   openssh_gssapi = common rec {
     pname = "openssh-with-gssapi";
-    version = "9.7p1";
+    version = "9.8p1";
     extraDesc = " with GSSAPI support";
 
     src = fetchurl {
