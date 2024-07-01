@@ -5,7 +5,7 @@ in
 {
   openssh = common rec {
     pname = "openssh";
-    version = "9.7p1";
+    version = "9.8p1";
 
     src = fetchurl {
       url = "mirror://openbsd/OpenSSH/portable/openssh-${version}.tar.gz";
