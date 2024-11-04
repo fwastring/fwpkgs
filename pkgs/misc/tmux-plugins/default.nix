@@ -704,7 +704,7 @@ in rec {
 
   tmux-fzf-window = mkTmuxPlugin {
     pluginName = "tmux-fzf-window";
-    rtpFilePath = "main.tmux";
+    rtpFilePath = "tmux-fzf-window.tmux";
     version = "unstable-2023-10-24";
     src = fetchFromGitHub {
       owner = "fwastring";
