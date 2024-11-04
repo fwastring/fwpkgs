@@ -702,6 +702,28 @@ in rec {
     };
   };
 
+  tmux-fzf-window = mkTmuxPlugin {
+    pluginName = "tmux-fzf-window";
+    rtpFilePath = "main.tmux";
+    version = "unstable-2023-10-24";
+    src = fetchFromGitHub {
+      owner = "fwastring";
+      repo = "tmux-fzf-window";
+      rev = "34ec37bef016d7ff116e98cc34f86db1f3f4a628";
+      sha256 = "18wvp7vdfmxvy3v0x3z1mvzab4cc6dx2yalsh4pl01ig6n0gsg4b";
+    };
+    postInstall = ''
+      find $target -type f -print0 | xargs -0 sed -i -e 's|fzf |${pkgs.fzf}/bin/fzf |g'
+    '';
+    meta = {
+      homepage = "https://github.com/fwastring/tmux-fzf-window";
+      description = "Use fzf to manage your windows in tmux! ";
+      license = lib.licenses.mit;
+      platforms = lib.platforms.unix;
+      maintainers = with lib.maintainers; [ fwastring ];
+    };
+  };
+
   tmux-fzf = mkTmuxPlugin {
     pluginName = "tmux-fzf";
     rtpFilePath = "main.tmux";
